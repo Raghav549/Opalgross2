@@ -1,0 +1,10 @@
+[project]
+name = "opalgross2-agent"
+version = "0.1.0"
+description = "Multimodal AI engineering and creation agent"
+requires-python = ">=3.11"
+dependencies = ["pydantic>=2.7", "fastapi>=0.115", "uvicorn>=0.30", "pandas>=2.2", "numpy>=1.26"]
+
+[project.optional-dependencies]
+train = ["datasets>=3.0", "transformers>=4.45", "trl>=0.12", "peft>=0.13", "accelerate>=1.0"]
+eval = ["pytest>=8.0", "scikit-learn>=1.5"]
